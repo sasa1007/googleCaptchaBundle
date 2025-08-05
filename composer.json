@@ -3,6 +3,8 @@
     "description": "Google reCAPTCHA bundle for Symfony",
     "type": "symfony-bundle",
     "license": "MIT",
+    "keywords": ["symfony", "bundle", "captcha", "recaptcha", "google"],
+    "homepage": "https://github.com/backend2-plus/google-captcha-bundle",
     "authors": [
         {
             "name": "Sasa Milivojevic",
@@ -24,5 +26,7 @@
             "allow-contrib": false,
             "require": "6.0"
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 } 
