@@ -1,2 +1,0 @@
-google_captcha:
-    secret: '%env(GOOGLE_CAPTCHA_SECRET)%' 

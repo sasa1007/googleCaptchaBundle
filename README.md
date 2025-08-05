@@ -83,4 +83,6 @@ rm config/packages/google_captcha.yaml
 3. Remove from composer:
 ```bash
 composer remove sasa1007/google-captcha-bundle
-``` 
+```
+
+**Note:** The bundle's service definitions are automatically removed when you uninstall the package. 
