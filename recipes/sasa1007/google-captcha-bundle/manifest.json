@@ -1,0 +1,15 @@
+{
+    "bundles": [
+        {
+            "name": "BeckUp\\GoogleCaptchaBundle\\GoogleCaptchaBundle",
+            "envs": ["all"]
+        }
+    ],
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/",
+        "src/": "%SRC_DIR%/"
+    },
+    "env": {
+        "GOOGLE_CAPTCHA_SECRET": "your_google_recaptcha_secret_key"
+    }
+} 
