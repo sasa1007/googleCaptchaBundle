@@ -1,10 +1,10 @@
 {
-    "name": "backend2-plus/google-captcha-bundle",
+    "name": "sasa1007/google-captcha-bundle",
     "description": "Google reCAPTCHA bundle for Symfony",
     "type": "symfony-bundle",
     "license": "MIT",
     "keywords": ["symfony", "bundle", "captcha", "recaptcha", "google"],
-    "homepage": "https://github.com/backend2-plus/google-captcha-bundle",
+    "homepage": "https://github.com/sasa1007/googleCaptchaBundle",
     "authors": [
         {
             "name": "Sasa Milivojevic",
