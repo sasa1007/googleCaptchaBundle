@@ -5,7 +5,7 @@ Simple Symfony bundle for Google reCAPTCHA integration.
 ## Installation
 
 ```bash
-composer require beckup/google-captcha-bundle
+composer require backend2-plus/google-captcha-bundle
 ```
 
 ## Configuration
