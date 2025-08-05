@@ -8,6 +8,8 @@ Simple Symfony bundle for Google reCAPTCHA integration.
 composer require sasa1007/google-captcha-bundle
 ```
 
+**Note:** After installation, you need to manually configure the bundle as described below.
+
 ## Configuration
 
 Add bundle to `config/bundles.php`:
@@ -19,7 +21,7 @@ return [
 ];
 ```
 
-Configuration file `config/packages/google_captcha.yaml` is already included in the bundle:
+Create configuration file `config/packages/google_captcha.yaml`:
 
 ```yaml
 google_captcha:
@@ -61,4 +63,24 @@ Add Google reCAPTCHA script to your template:
 ```html
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+```
+
+## Uninstallation
+
+To remove the bundle:
+
+1. Remove from `config/bundles.php`:
+```php
+// Remove this line:
+// BeckUp\GoogleCaptchaBundle\GoogleCaptchaBundle::class => ['all' => true],
+```
+
+2. Delete configuration file:
+```bash
+rm config/packages/google_captcha.yaml
+```
+
+3. Remove from composer:
+```bash
+composer remove sasa1007/google-captcha-bundle
 ``` 

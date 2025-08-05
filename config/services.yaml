@@ -2,4 +2,7 @@ services:
     BeckUp\GoogleCaptchaBundle\Service\GoogleCaptchaService:
         arguments:
             $params: '@parameter_bag'
-        tags: [] 
+        tags: []
+
+    # Automatically register the bundle
+    BeckUp\GoogleCaptchaBundle\GoogleCaptchaBundle: ~ 
