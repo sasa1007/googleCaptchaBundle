@@ -19,18 +19,20 @@ return [
 ];
 ```
 
-Add configuration to `config/packages/google_captcha.yaml`:
+Configuration file `config/packages/google_captcha.yaml` is already included in the bundle:
 
 ```yaml
 google_captcha:
     secret: '%env(GOOGLE_CAPTCHA_SECRET)%'
 ```
 
-Add to `.env`:
+Add to your `.env` file:
 
 ```
 GOOGLE_CAPTCHA_SECRET=your_google_recaptcha_secret_key
 ```
+
+**Note:** Replace `your_google_recaptcha_secret_key` with your actual Google reCAPTCHA secret key from [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
 ## Usage
 
