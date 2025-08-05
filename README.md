@@ -12,14 +12,6 @@ composer require sasa1007/google-captcha-bundle
 
 ## Configuration
 
-Add bundle to `config/bundles.php`:
-
-```php
-return [
-    // ... other bundles
-    BeckUp\GoogleCaptchaBundle\GoogleCaptchaBundle::class => ['all' => true],
-];
-```
 
 Create configuration file `config/packages/google_captcha.yaml`:
 
@@ -69,20 +61,14 @@ Add Google reCAPTCHA script to your template:
 
 To remove the bundle:
 
-1. Remove from `config/bundles.php`:
-```php
-// Remove this line:
-// BeckUp\GoogleCaptchaBundle\GoogleCaptchaBundle::class => ['all' => true],
-```
-
-2. Delete configuration file:
+1. Delete configuration file:
 ```bash
 rm config/packages/google_captcha.yaml
 ```
 
-3. Remove from composer:
+2. Remove from composer:
 ```bash
 composer remove sasa1007/google-captcha-bundle
 ```
 
-**Note:** The bundle's service definitions are automatically removed when you uninstall the package. 
+**Note:** The bundle is automatically unregistered and service definitions are removed when you uninstall the package. 
