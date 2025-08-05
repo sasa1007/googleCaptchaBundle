@@ -1,0 +1,5 @@
+services:
+    BeckUp\GoogleCaptchaBundle\Service\GoogleCaptchaService:
+        arguments:
+            $params: '@parameter_bag'
+        tags: [] 
